@@ -1,0 +1,21 @@
+<!-- Cris é uma professora de matemática e decidiu criar um cálculo para mostrar a rotação do planeta terra perante sistema solar.
+
+Para calcular este problema a mesma chegou na seguinte expressão:
+
+resultado = y + 5 * 9 / 7 + (h - t / T  + o) - 5 * 100;
+
+Faça um programa que resolva esta operação. 
+----------------------------------------------
+-->
+
+<script>
+  variavelY = Number(prompt("Digite o valor da variável 'y':"));
+  variavelH = Number(prompt("Digite o valor da variável 'h':"));
+  variavelT1 = Number(prompt("Digite o valor da variável 't':"));
+  variavelT2 = Number(prompt("Digite o valor da variável 'T':"));
+  variavelO = Number(prompt("Digite o valor da variável 'o':"));
+
+  resultado = variavelY + 5 * 9 / 7 + (variavelH - variavelT1 / variavelT2 + variavelO) - 5 * 100;
+
+  alert(`A rotação do planeta terra peranteo sistema solar é: ${resultado}`);
+</script>
