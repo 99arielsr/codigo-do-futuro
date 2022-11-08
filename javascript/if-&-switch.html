@@ -30,21 +30,41 @@ Se ele não poder viajar, mostre o quanto falta para o mesmo economizar. -->
   let valorDestino;
 
 
-  if (destinoDesejavel === 1) {
-    valorDestino = disney;
-  } else if (destinoDesejavel === 2) {
-    valorDestino = madrid;
-  } else if (destinoDesejavel === 3) {
-    valorDestino = maceio;
-  } else {
-    valorDestino = ribeiraoPreto;
+  // // Solução com if
+  // if (destinoDesejavel === 1) {
+  //   valorDestino = disney;
+  // } else if (destinoDesejavel === 2) {
+  //   valorDestino = madrid;
+  // } else if (destinoDesejavel === 3) {
+  //   valorDestino = maceio;
+  // } else if (destinoDesejavel === 4) {
+  //   valorDestino = ribeiraoPreto;
+  // } else {
+  //   alert("Digite um destino válido!")
+  // }
+
+  switch (destinoDesejavel) {
+    case 1:
+      valorDestino = disney;
+      break;
+    case 2:
+      valorDestino = madrid;
+      break;
+    case 3:
+      valorDestino = maceio;
+      break;
+    case 4:
+      valorDestino = ribeiraoPreto;
+      break;
+    default:
+      alert(`Digite um destino válido!`)
   }
 
   const diferenca = valorDestino - valorDisponivel;
 
   if (valorDisponivel < valorDestino) {
     alert(`${nome}
-    Infelizmente você não consegue realizar essa viagem ainda, faltam R$${diferenca} para realizar a viagem.`)
+    Infelizmente você não consegue realizar essa viagem ainda, faltam R$${diferenca.toFixed(2)} para realizar a viagem.`)
   } else {
     alert(`Parabéns ${nome}, você consegue realizar esta viagem!`)
   }
