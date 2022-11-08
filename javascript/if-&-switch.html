@@ -64,9 +64,9 @@ Se ele não poder viajar, mostre o quanto falta para o mesmo economizar. -->
 
   if (valorDisponivel < valorDestino) {
     alert(`${nome}
-    Infelizmente você não consegue realizar essa viagem ainda, faltam R$${diferenca.toFixed(2)} para realizar a viagem.`)
+    Infelizmente você não consegue realizar essa viagem ainda, faltam ${diferenca.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })} para realizar a viagem.`)
   } else {
-    alert(`Parabéns ${nome}, você consegue realizar esta viagem!`)
+    alert(`Parabéns ${nome}, você consegue realizar esta viagem e sobram ${(diferenca * -1).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`)
   }
 
 </script>
