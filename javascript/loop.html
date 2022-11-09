@@ -2,10 +2,10 @@
 Faça um programa que mostre somente os números pares entre os números digitados. -->
 
 <script>
-  const numeroInicial = Number(prompt("Digite o número inicial:"));
-  const numeroFinal = Number(prompt("Digite o número final:"));
-
+  const numeroInicial = parseInt(prompt("Digite o número inicial:"));
+  const numeroFinal = parseInt(prompt("Digite o número final:"));
   const numerosPares = [];
+
   for (let i = numeroInicial; i <= numeroFinal; i++) {
     if (i % 2 == 0) {
       numerosPares.push(i);
